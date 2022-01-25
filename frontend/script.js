@@ -47,6 +47,14 @@ class Calculator {
         var multipliarNumber = ((prevNumber.length - prevNumber.indexOf('.') > currentText.length - currentText.indexOf('.')) ? prevNumber.length - prevNumber.indexOf('.') : currentText.length - currentText.indexOf('.'))
         multipliarNumber--;
 
+        /*
+        var result = {
+            '+':1+2,
+        }['+'];
+
+        console.log(result)
+        */
+       
         switch (_operation) {
             case '+':
                 this.previousCalculations.innerText = prevText + ' ' + currentText;
